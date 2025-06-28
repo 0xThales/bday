@@ -17,6 +17,42 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Custom slider styles */
+input[type="range"]::-webkit-slider-thumb {
+  appearance: none;
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  background: #facc15;
+  cursor: pointer;
+  border: 2px solid #1e293b;
+}
+
+input[type="range"]::-moz-range-thumb {
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  background: #facc15;
+
+  cursor: pointer;
+  border: 2px solid #1e293b;
+}
+
+/* Hello Kitty gentle bounce animation */
+@keyframes bounce-gentle {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+.animate-bounce-gentle {
+  animation: bounce-gentle 3s ease-in-out infinite;
+}
+
 /* Confetti animation */
 @keyframes confetti-fall {
   0% {

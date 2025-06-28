@@ -1,17 +1,18 @@
 export const questions = [
   {
     id: 1,
-    question: "¿Quién escribió:",
+    question:
+      "¿Cuál de estos libros no tiene una puntuación de 5 estrellas en tu Goodreads?",
     quote: {
-      english: "Words are, of course, the most powerful drug used by mankind.",
+      english: "Every book tells a story, but some resonate more deeply.",
       spanish:
-        "Las palabras son, por supuesto, la droga más poderosa usada por la humanidad.",
+        "Cada libro cuenta una historia, pero algunos resuenan más profundo.",
     },
     options: [
-      { id: "A", text: "Rudyard Kipling", isCorrect: true },
-      { id: "B", text: "William Blake", isCorrect: false },
-      { id: "C", text: "Samuel Taylor Coleridge", isCorrect: false },
-      { id: "D", text: "George Eliot", isCorrect: false },
+      { id: "A", text: "The Catcher in the Rye", isCorrect: false },
+      { id: "B", text: "Lolita", isCorrect: false },
+      { id: "C", text: "El acontecimiento", isCorrect: false },
+      { id: "D", text: "Normal People", isCorrect: true },
     ],
     gift: {
       title: "Mrs. Dalloway",
@@ -21,18 +22,16 @@ export const questions = [
   },
   {
     id: 2,
-    question: "¿Qué poeta escribió:",
+    question: "¿En cuál de estos años leíste más libros según tu Goodreads?",
     quote: {
-      english:
-        "If I can stop one heart from breaking, I shall not live in vain.",
-      spanish:
-        "Si puedo evitar que un corazón se rompa, no habré vivido en vano.",
+      english: "Some years we devour books like never before.",
+      spanish: "Algunos años devoramos libros como nunca antes.",
     },
     options: [
-      { id: "A", text: "Elizabeth Barrett Browning", isCorrect: false },
-      { id: "B", text: "Emily Dickinson", isCorrect: true },
-      { id: "C", text: "Christina Rossetti", isCorrect: false },
-      { id: "D", text: "Mary Shelley", isCorrect: false },
+      { id: "A", text: "2020", isCorrect: false },
+      { id: "B", text: "2024", isCorrect: false },
+      { id: "C", text: "2021", isCorrect: true },
+      { id: "D", text: "2023", isCorrect: false },
     ],
     gift: {
       title: "Crying in H Mart",
@@ -42,16 +41,17 @@ export const questions = [
   },
   {
     id: 3,
-    question: "¿De qué autor es esta línea de sus diarios personales:",
+    question:
+      "¿Con cuántos años conoce Humbert Humbert a Lolita en la famosa obra de Nabokov?",
     quote: {
-      english: "Kiss me, and you will see how important I am.",
-      spanish: "Bésame, y verás qué importante soy.",
+      english: "Light of my life, fire of my loins. My sin, my soul.",
+      spanish: "Luz de mi vida, fuego de mis entrañas. Mi pecado, mi alma.",
     },
     options: [
-      { id: "A", text: "Sylvia Plath", isCorrect: true },
-      { id: "B", text: "Anne Sexton", isCorrect: false },
-      { id: "C", text: "Virginia Woolf", isCorrect: false },
-      { id: "D", text: "Anaïs Nin", isCorrect: false },
+      { id: "A", text: "13", isCorrect: false },
+      { id: "B", text: "12", isCorrect: true },
+      { id: "C", text: "14", isCorrect: false },
+      { id: "D", text: "17", isCorrect: false },
     ],
     gift: {
       title: "Ana Non",

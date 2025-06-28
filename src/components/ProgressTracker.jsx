@@ -25,8 +25,8 @@ const ProgressTracker = ({
         </div>
       </div>
 
-      {/* Gift Status */}
-      <div className="grid grid-cols-3 gap-4">
+      {/* Gift Status - Mobile Optimized */}
+      <div className="flex gap-2 md:gap-4 justify-center">
         {Array.from({ length: totalQuestions }, (_, index) => {
           const isUnlocked = index < unlockedGifts.length
           const isCurrent = index === currentQuestion
@@ -36,7 +36,7 @@ const ProgressTracker = ({
             <div
               key={index}
               className={`
-                p-4 rounded-lg border-2 transition-all duration-300 text-center
+                flex-1 max-w-[100px] p-2 md:p-4 rounded-lg border-2 transition-all duration-300 text-center
                 ${
                   isUnlocked
                     ? "bg-green-800/80 border-green-400 text-green-100"
@@ -48,29 +48,24 @@ const ProgressTracker = ({
                 }
               `}
             >
-              <div className="text-2xl mb-2">
+              <div className="text-lg md:text-2xl mb-1 md:mb-2">
                 {isUnlocked
-                  ? "🎁✨"
+                  ? "🎁"
                   : isCurrent
                   ? "🎯"
                   : isCompleted
                   ? "❌"
                   : "📦"}
               </div>
-              <div className="text-sm font-medium">
+              <div className="text-xs md:text-sm font-medium leading-tight">
                 {isUnlocked
-                  ? "Desbloqueado"
+                  ? "✓"
                   : isCurrent
-                  ? "Pregunta Actual"
+                  ? "Actual"
                   : isCompleted
-                  ? "No desbloqueado"
-                  : "Pendiente"}
+                  ? "X"
+                  : "?"}
               </div>
-              {isUnlocked && unlockedGifts[index] && (
-                <div className="text-xs mt-1 font-semibold">
-                  {unlockedGifts[index].title}
-                </div>
-              )}
             </div>
           )
         })}

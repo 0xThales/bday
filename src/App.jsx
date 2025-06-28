@@ -2,6 +2,7 @@ import React, { useState } from "react"
 import Landing from "./components/Landing"
 import Quiz from "./components/Quiz"
 import Results from "./components/Results"
+import MusicControl from "./components/MusicControl"
 import { questions } from "./data/questions"
 
 function App() {
@@ -54,6 +55,8 @@ function App() {
 
   return (
     <div className="min-h-screen">
+      <MusicControl />
+
       {gameState === "landing" && <Landing onStartGame={startGame} />}
 
       {gameState === "quiz" && (
