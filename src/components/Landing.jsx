@@ -18,7 +18,7 @@ const Landing = ({ onStartGame }) => {
             <img
               src={kittyAvatar}
               alt="Hello Kitty"
-              className="w-32 h-32 md:w-40 md:h-40 mx-auto rounded-full border-4 border-yellow-400/60 shadow-lg shadow-yellow-400/30 object-cover animate-bounce-gentle"
+              className="w-32 h-32 md:w-40 md:h-40 mx-auto rounded-full border-4 border-yellow-400/60 shadow-lg shadow-yellow-400/30 object-cover"
             />
             <div className="absolute -top-2 -right-2 text-2xl md:text-3xl animate-pulse">
               🎂
